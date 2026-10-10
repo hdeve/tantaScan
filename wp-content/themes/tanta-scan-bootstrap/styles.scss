@@ -1,0 +1,7 @@
+.wp-admin-bootstrap {
+    @import "node_modules/bootstrap/scss/bootstrap";
+}
+
+.my-custom-widget {
+    @import "./node_modules/bootstrap/scss/bootstrap";
+}

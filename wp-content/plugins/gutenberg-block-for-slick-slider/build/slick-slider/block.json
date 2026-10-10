@@ -1,0 +1,204 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "gb-for-slick-slider/slick-slider",
+  "version": "2.0.0",
+  "title": "Simple Slider",
+  "category": "widgets",
+  "icon": "admin-page",
+  "description": "Build a slider out of core blocks. Start from a template, then style the arrows and pagination.",
+  "keywords": [
+    "slider",
+    "carousel",
+    "slideshow",
+    "slick"
+  ],
+  "supports": {
+    "html": false,
+    "align": true,
+    "spacing": {
+      "padding": true,
+      "margin": true
+    }
+  },
+  "providesContext": {
+    "gb-for-slick-slider/slidesToShow": "slidesToShow",
+    "gb-for-slick-slider/slideMargin": "slideMargin"
+  },
+  "attributes": {
+    "dots": {
+      "type": "boolean",
+      "default": false
+    },
+    "arrows": {
+      "type": "boolean",
+      "default": true
+    },
+    "infinite": {
+      "type": "boolean",
+      "default": false
+    },
+    "centerMode": {
+      "type": "boolean",
+      "default": false
+    },
+    "adaptiveHeight": {
+      "type": "boolean",
+      "default": false
+    },
+    "autoplay": {
+      "type": "boolean",
+      "default": false
+    },
+    "autoplaySpeed": {
+      "type": "number",
+      "default": 1500
+    },
+    "fade": {
+      "type": "boolean",
+      "default": false
+    },
+    "slidesToShow": {
+      "type": "number",
+      "default": 2
+    },
+    "slideSpeed": {
+      "type": "number",
+      "default": 1000
+    },
+    "slidesToScroll": {
+      "type": "number",
+      "default": 1
+    },
+    "slideMargin": {
+      "type": "number",
+      "default": 0
+    },
+    "arrowStyle": {
+      "type": "string",
+      "default": "chevron"
+    },
+    "arrowBorderStyle": {
+      "type": "string",
+      "default": "circle"
+    },
+    "arrowBackgroundColor": {
+      "type": "string",
+      "default": "#ffffff00"
+    },
+    "arrowColor": {
+      "type": "string",
+      "default": "#d3d1d1"
+    },
+    "arrowPosition": {
+      "type": "string",
+      "default": "sides"
+    },
+    "arrowFontSize": {
+      "type": "number",
+      "default": 20
+    },
+    "arrowHeight": {
+      "type": "number",
+      "default": 40
+    },
+    "pauseOnHover": {
+      "type": "boolean",
+      "default": true
+    },
+    "arrowBorderColor": {
+      "type": "string",
+      "default": "#d3d1d1"
+    },
+    "arrowBorderWidth": {
+      "type": "number",
+      "default": 1
+    },
+    "arrowGap": {
+      "type": "number",
+      "default": 5
+    },
+    "arrowHoverColor": {
+      "type": "string",
+      "default": ""
+    },
+    "arrowHoverBackgroundColor": {
+      "type": "string",
+      "default": ""
+    },
+    "arrowShadow": {
+      "type": "boolean",
+      "default": false
+    },
+    "dotStyle": {
+      "type": "string",
+      "default": "dots"
+    },
+    "dotPosition": {
+      "type": "string",
+      "default": "bottom-center"
+    },
+    "dotColor": {
+      "type": "string",
+      "default": "#d3d1d1"
+    },
+    "dotActiveColor": {
+      "type": "string",
+      "default": "#000000"
+    },
+    "dotSize": {
+      "type": "number",
+      "default": 10
+    },
+    "dotGap": {
+      "type": "number",
+      "default": 8
+    },
+    "responsive": {
+      "type": "array",
+      "default": [
+        {
+          "breakpoint": 1024,
+          "settings": {
+            "slidesToShow": 1,
+            "slidesToScroll": 1,
+            "arrows": true,
+            "dots": true
+          }
+        },
+        {
+          "breakpoint": 768,
+          "settings": {
+            "slidesToShow": 1,
+            "slidesToScroll": 1,
+            "arrows": false,
+            "dots": true
+          }
+        },
+        {
+          "breakpoint": 600,
+          "settings": {
+            "slidesToShow": 1,
+            "slidesToScroll": 1,
+            "arrows": false,
+            "dots": true
+          }
+        },
+        {
+          "breakpoint": 480,
+          "settings": {
+            "slidesToShow": 1,
+            "slidesToScroll": 1,
+            "arrows": false,
+            "dots": true
+          }
+        }
+      ]
+    }
+  },
+  "textdomain": "gb-for-slick-slider",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}
